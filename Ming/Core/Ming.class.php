@@ -31,7 +31,11 @@ class Ming {
 	 */
 	public static function autoloadMing($classname) {
 		$classname = str_replace('\\', '/', $classname);
-		require ROOT_PATH . '/' . $classname . '.class.php' ;
+		$filename = ROOT_PATH . '/' . $classname . '.class.php';
+		if (file_exists($filename)) {
+			require ROOT_PATH . '/' . $classname . '.class.php' ;
+		}
+		
 	}
 
 

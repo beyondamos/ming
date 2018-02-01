@@ -4,8 +4,9 @@ use Ming\Core\Controller;
 
 class IndexController extends Controller
 {
+
 	public function index() {
-		// var_dump($this->config);
+		$this->assign('aaa', '小明');
 		$this->display('index.html');
 	}
 

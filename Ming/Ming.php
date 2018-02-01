@@ -16,7 +16,8 @@ defined('CORE_PATH') or define('CORE_PATH', MING_PATH.'/Core');
 defined('LIBS_PATH') or define('LIBS_PATH', MING_PATH.'/Libs');
 //项目代码目录
 defined('APP_PATH') or define('APP_PATH', ROOT_PATH.'/App');
-
+//运行时目录
+defined('RUNTIME_PATH') or define('RUNTIME_PATH', APP_PATH.'/Runtime');
 
 //系统常亮 
 define('REQUEST_METHOD',$_SERVER['REQUEST_METHOD']);
