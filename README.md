@@ -7,3 +7,7 @@
 5.session cookies
 6.生成路由
 7.获取参数
+
+
+
+1、必须开启PDO扩展

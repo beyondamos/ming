@@ -13,8 +13,6 @@ class Controller {
 	public function __construct() {
 		//传入配置信息
 		$this->config = $GLOBALS['config'];
-		unset($GLOBALS['config']);
-
 		$this->view = new View([
 						'html_cache_on' 	=> 	$this->config['html_cache_on'],
 						'cache_lifetime'	=> 	$this->config['cache_lifetime'],
